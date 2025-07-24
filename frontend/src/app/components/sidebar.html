@@ -1,0 +1,32 @@
+<div class="sidebar" [class.collapsed]="isCollapsed">
+  <button class="toggle-btn" (click)="toggleSidebar()">
+    <i class="bi" [ngClass]="isCollapsed ? 'bi-arrow-right-circle' : 'bi-arrow-left-circle'"></i>
+  </button>
+
+  <ul class="nav-links">
+    <li>
+      <a routerLink="/dashboard">
+        <i class="bi bi-speedometer2"></i>
+        <span class="link-text" *ngIf="!isCollapsed">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/dashboard-table">
+        <i class="bi bi-table"></i>
+        <span class="link-text" *ngIf="!isCollapsed">Gerenciar Tabelas</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/usuarios">
+        <i class="bi bi-people"></i>
+        <span class="link-text" *ngIf="!isCollapsed">Usuários</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/configuracoes">
+        <i class="bi bi-gear"></i>
+        <span class="link-text" *ngIf="!isCollapsed">Configurações</span>
+      </a>
+    </li>
+  </ul>
+</div>

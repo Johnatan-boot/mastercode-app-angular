@@ -1,0 +1,103 @@
+<div class="container mt-4">
+
+  <!-- Formulário de Alunos -->
+  <h3>Cadastro de Alunos</h3>
+  <form class="row g-3 mb-3" (submit)="adicionarAluno(); $event.preventDefault()">
+    <div class="col-md-5">
+      <input class="form-control" type="text" [(ngModel)]="novoAluno.nome" name="nomeAluno" placeholder="Nome do Aluno" required>
+    </div>
+    <div class="col-md-5">
+      <input class="form-control" type="email" [(ngModel)]="novoAluno.email" name="emailAluno" placeholder="Email do Aluno" required>
+    </div>
+    <div class="col-md-2 d-grid">
+      <button class="btn btn-submit">Adicionar</button>
+    </div>
+  </form>
+
+  <!-- Tabela de Alunos -->
+  <div class="card mb-5">
+    <div class="card-header">Lista de Alunos</div>
+    <div class="card-body table-responsive">
+      <table class="table table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th>Nome</th><th>Email</th><th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let aluno of alunos">
+            <td *ngIf="!editandoAluno || editandoAluno.id !== aluno.id">{{ aluno.nome }}</td>
+            <td *ngIf="!editandoAluno || editandoAluno.id !== aluno.id">{{ aluno.email }}</td>
+
+            <ng-container *ngIf="editandoAluno && editandoAluno.id === aluno.id">
+              <td><input class="form-control" [(ngModel)]="editandoAluno.nome" /></td>
+              <td><input class="form-control" [(ngModel)]="editandoAluno.email" /></td>
+            </ng-container>
+
+            <td>
+              <ng-container *ngIf="!editandoAluno || editandoAluno.id !== aluno.id">
+                <button class="btn btn-sm btn-add me-2" (click)="editarAluno(aluno)">Editar</button>
+                <button class="btn btn-sm btn-add" (click)="excluirAluno(aluno.id)">Excluir</button>
+              </ng-container>
+              <ng-container *ngIf="editandoAluno && editandoAluno.id === aluno.id">
+                <button class="btn btn-sm btn-add me-2" (click)="salvarAluno()">Salvar</button>
+                <button class="btn btn-sm btn-add" (click)="cancelarEdicaoAluno()">Cancelar</button>
+              </ng-container>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Formulário de Usuários -->
+  <h3>Cadastro de Usuários</h3>
+  <form class="row g-3 mb-3" (submit)="adicionarUsuario(); $event.preventDefault()">
+    <div class="col-md-5">
+      <input class="form-control" type="text" [(ngModel)]="novoUsuario.nome" name="nomeUsuario" placeholder="Nome do Usuário" required>
+    </div>
+    <div class="col-md-5">
+      <input class="form-control" type="email" [(ngModel)]="novoUsuario.email" name="emailUsuario" placeholder="Email do Usuário" required>
+    </div>
+    <div class="col-md-2 d-grid">
+      <button class="btn btn-add">Adicionar</button>
+    </div>
+  </form>
+
+  <!-- Tabela de Usuários -->
+  <div class="card">
+    <div class="card-header">Lista de Usuários</div>
+    <div class="card-body table-responsive">
+      <table class="table table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th>Nome</th><th>Email</th><th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let usuario of usuarios">
+            <td *ngIf="!editandoUsuario || editandoUsuario.id !== usuario.id">{{ usuario.nome }}</td>
+            <td *ngIf="!editandoUsuario || editandoUsuario.id !== usuario.id">{{ usuario.email }}</td>
+
+            <ng-container *ngIf="editandoUsuario && editandoUsuario.id === usuario.id">
+              <td><input class="form-control" [(ngModel)]="editandoUsuario.nome" /></td>
+              <td><input class="form-control" [(ngModel)]="editandoUsuario.email" /></td>
+            </ng-container>
+
+            <td>
+              <ng-container *ngIf="!editandoUsuario || editandoUsuario.id !== usuario.id">
+                <button class="btn btn-sm btn-add me-2" (click)="editarUsuario(usuario)">Editar</button>
+                <button class="btn btn-sm btn-add" (click)="excluirUsuario(usuario.id)">Excluir</button>
+              </ng-container>
+              <ng-container *ngIf="editandoUsuario && editandoUsuario.id === usuario.id">
+                <button class="btn btn-sm btn-add me-2" (click)="salvarUsuario()">Salvar</button>
+                <button class="btn btn-sm btn-add" (click)="cancelarEdicaoUsuario()">Cancelar</button>
+              </ng-container>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>

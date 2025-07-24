@@ -1,0 +1,81 @@
+mat-toolbar {
+  background: linear-gradient(90deg, #0a1d0a, #0cca6b);
+  background-color: #0e3b0e;
+  color: #00ff7f;
+  padding: 20px;
+
+}
+
+.span-logo {
+  position: relative;
+  left: 45%;
+
+}
+
+
+form .btn {
+  background-color: #0e3b0e;
+  color: #00ff7f;
+}
+
+form .btn:hover {
+  background-color: #00ff7f;
+  color: #0e3b0e;
+}
+
+.example-icon {
+  color: #00ff7f;
+
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+
+.navbar {
+  background: linear-gradient(90deg, #0a1d0a, #0cca6b);
+  background-color: #0e3b0e;
+  color: #00ff7f;
+  padding: 20px;
+  box-shadow: 0px 8px 12px -3px rgba(0, 255, 127, 0.4);
+  /* sombra mais suave e natural */
+  -webkit-box-shadow: 0px 8px 12px -3px rgba(0, 255, 127, 0.4);
+  -moz-box-shadow: 0px 8px 12px -3px rgba(0, 255, 127, 0.4);
+  position: relative;
+  z-index: 10;
+}
+
+.navbar a {
+
+  color: #00ff7f;
+
+}
+
+.navbar a:hover {
+  color: #0d770d;
+
+}
+
+
+.cart-icon {
+  cursor: pointer;
+  position: relative;
+  font-size: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+}
+
+.cart-icon .badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #00ff00;
+  color: black;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+}

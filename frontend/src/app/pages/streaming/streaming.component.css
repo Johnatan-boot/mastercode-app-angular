@@ -1,0 +1,21 @@
+:host {
+  display: block;
+}
+
+.card{
+  margin-top: 20px;
+  background: linear-gradient(145deg, #061606, #0e3b0e);
+  border-radius: 12px;
+  color: #14dd78;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+h3{
+  font-size: 1.2em;
+}
+
+p{
+  margin-bottom: 25px;
+}
+

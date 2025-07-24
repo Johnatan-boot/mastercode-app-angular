@@ -1,0 +1,24 @@
+<div class="body">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <app-matrix-canva />
+        <div class="signup-container">
+          <h1 class="logo" #titleRef>MASTER<span>CODE</span></h1>
+          <iframe width="60" height="31" src="https://www.youtube.com/embed/mMI9IvZ12J0?si=sMJN6ctbALQq_3YY"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <form class="signup-form" (ngSubmit)="signup()" #signupForm="ngForm">
+            <input type="text" placeholder="Usuário" [(ngModel)]="usernameValue" name="username" required />
+            <input type="email" placeholder="E-mail" [(ngModel)]="email" name="email" required />
+            <input type="password" placeholder="Senha" [(ngModel)]="password" name="password" required />
+            <input type="password" placeholder="Confirmar Senha" [(ngModel)]="confirmPassword" name="confirmPassword" required />
+            <button type="submit">Cadastrar</button>
+            <p *ngIf="signupError()">{{ signupError() }}</p>
+          </form>
+          <p class="footer-text">© 2025 MasterCode. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

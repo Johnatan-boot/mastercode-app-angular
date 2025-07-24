@@ -1,0 +1,23 @@
+/* Só use isso em telas como login/cadastro */
+html.login-mode,
+body.login-mode {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: black;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.body {
+  background-color: #000000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.col {
+  color: #fff;
+}

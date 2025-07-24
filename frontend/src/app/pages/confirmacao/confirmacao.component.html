@@ -1,0 +1,19 @@
+<h2>Confirmação da Compra</h2>
+
+<div *ngIf="compra; else semDados">
+  <p>Obrigado pela sua compra!</p>
+
+  <h3>Itens adquiridos:</h3>
+  <ul>
+    <li *ngFor="let item of compra.itens">
+      {{item.titulo}} — {{item.quantidade}} x R$ {{item.preco | number:'1.2-2'}}
+    </li>
+  </ul>
+
+  <p><strong>Total:</strong> R$ {{compra.total | number:'1.2-2'}}</p>
+  <p><strong>Forma de pagamento:</strong> {{compra.formaPagamento}}</p>
+</div>
+
+<ng-template #semDados>
+  <p>Nenhuma compra encontrada.</p>
+</ng-template>

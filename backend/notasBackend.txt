@@ -1,0 +1,10 @@
+/backend
+├── controllers
+│   └── payment.controller.js      ✅ (usa card_hash com segurança)
+├── routes
+│   └── payment.routes.js          ✅ (rota POST /api/payment)
+├── .env                           ✅ (com PAGARME_API_KEY e ENCRYPTION_KEY)
+├── app.js ou server.js            ✅ (inicializa o Express com rotas organizadas)
+
+
+APENAS MANTER ESTES ARQUIVOS ESTA ESTRUTURA

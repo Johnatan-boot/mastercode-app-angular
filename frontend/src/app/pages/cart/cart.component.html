@@ -1,0 +1,32 @@
+<h2>Seu Carrinho</h2>
+
+<div class="cart-container">
+  <table class="cart-table">
+    <thead>
+      <tr>
+        <th>Imagem</th>
+        <th>Produto</th>
+        <th>Qtd</th>
+        <th>Preço</th>
+        <th>Total</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of carrinho()">
+        <td><img [src]="item.imagem" [alt]="item.titulo" /></td>
+        <td>{{ item.titulo }}</td>
+        <td>{{ item.quantidade }}</td>
+        <td>R$ {{ item.preco | number:'1.2-2' }}</td>
+        <td>R$ {{ (item.preco * item.quantidade) | number:'1.2-2' }}</td>
+        <td><button (click)="remover(item)">Remover</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="cart-total">
+    Total: <strong>R$ {{ totalCarrinho() | number:'1.2-2' }}</strong>
+  </div>
+
+  <button class="checkout" (click)="finalizarCompra()">Finalizar Compra</button>
+</div>

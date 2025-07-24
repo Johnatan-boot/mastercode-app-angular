@@ -1,0 +1,14 @@
+@import url('./assets/styles/matrix-theme.css');
+
+
+/* Para mudar a cor do fundo do toast success */
+.p-toast-message-success {
+  background-color: #228B22 !important; /* verde floresta */
+  color: white !important;
+  border-radius: 6px;
+}
+
+/* Para o ícone também mudar a cor */
+.p-toast-message-success .p-toast-icon {
+  color: white !important;
+}

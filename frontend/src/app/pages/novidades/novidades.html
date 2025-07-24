@@ -1,0 +1,14 @@
+<section class="novidades-section">
+  <h2 class="titulo-novidades">Últimas Novidades</h2>
+
+  <div class="grid-novidades">
+    <div class="card-novidade" *ngFor="let novidade of novidades">
+      <img [src]="novidade.imagem" alt="Imagem da novidade" class="imagem-novidade">
+      <div class="conteudo-novidade">
+        <h3>{{ novidade.titulo }}</h3>
+        <p>{{ novidade.descricao }}</p>
+        <span class="data-novidade">{{ novidade.data }}</span>
+      </div>
+    </div>
+  </div>
+</section>

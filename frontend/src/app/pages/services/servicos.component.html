@@ -1,0 +1,10 @@
+<h2>Nossos Serviços</h2>
+<section id="produtos">
+  <div class="card" *ngFor="let produto of produtos">
+    <img [src]="produto.imagem" alt="{{ produto.titulo }}">
+    <h3>{{ produto.titulo }}</h3>
+    <p>{{ produto.descricao }}</p>
+    <div class="price">R$ {{ produto.preco | number: '1.2-2' }}</div>
+    <button (click)="adicionar(produto)">Adicionar ao Carrinho</button>
+  </div>
+</section>

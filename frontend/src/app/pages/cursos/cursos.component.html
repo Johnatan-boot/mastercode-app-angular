@@ -1,0 +1,18 @@
+<div class="login-container">
+  <div class="logo">Cursos <span>MasterCode</span></div>
+
+  <div class="login-form">
+    <p>👨‍🏫 Conheça os cursos disponíveis:</p>
+
+    <app-course-card
+      *ngFor="let curso of cursos"
+      [title]="curso.title"
+      [description]="curso.description"
+      [icon]="curso.icon">
+    </app-course-card>
+
+    <button class="secondary-button">Ver Todos</button>
+  </div>
+
+  <div class="footer-text">Powered by MasterCode</div>
+</div>
