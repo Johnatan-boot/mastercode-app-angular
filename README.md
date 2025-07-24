@@ -1,59 +1,78 @@
-# MastercodeApp
+#Tela Login
+![Captura de tela 2025-06-13 231912](https://github.com/user-attachments/assets/a4a5cd66-24bb-45c2-a553-0d49a3bea1a9)
+#Tela Dashboard
+![Captura de tela 2025-06-13 232856](https://github.com/user-attachments/assets/95d3591c-68fc-4f90-a605-93f039808c30)
+#Tela Home
+![Captura de tela 2025-06-14 002209](https://github.com/user-attachments/assets/f4ee887d-d879-40d0-911a-3c31e1e265d3)
+#Form-Oraçamentos
+![Captura de tela 2025-06-13 232036](https://github.com/user-attachments/assets/10654f07-9ab0-4d0d-82f6-eed6c37a9315)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.4.
 
-## Development server
+# 🧠 MasterCode
 
-To start a local development server, run:
+> Plataforma independente para desenvolver talentos em tecnologia com desafios, mapas interativos e uma jornada prática de aprendizado.
 
-```bash
-ng serve
-```
+![Captura de tela 2025-06-13 231912](https://github.com/user-attachments/assets/a4a5cd66-24bb-45c2-a553-0d49a3bea1a9)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🚧 Status do Projeto
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+🟡 **Em desenvolvimento ativo**  
+🌱 Versão inicial focada em desafios interativos, visualização com Canvas e mapas com Leaflet.js  
+🔐 Backend básico com autenticação e rotas RESTful
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🎯 Objetivos
 
-```bash
-ng generate --help
-```
+O **MasterCode** nasce com o propósito de ser mais do que uma plataforma de estudo. Ele é:
 
-## Building
+- Um mapa de talentos desenvolvedores
+- Um campo de testes com desafios e missões
+- Um portal visual que une frontend criativo com dados reais
+- Um projeto educacional independente, colaborativo e evolutivo
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 💻 Tecnologias Utilizadas
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Frontend
 
-## Running unit tests
+- ✅ HTML5 + CSS3
+- ✅ JavaScript Puro (modular)
+- ✅ Canvas API (visualizações de desempenho)
+- ✅ Leaflet.js (mapas interativos)
+- ✅ Design responsivo
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Backend
 
-```bash
-ng test
-```
+- ✅ Node.js + Express
+- ✅ API RESTful com rotas para autenticação, usuários e desafios
+- ✅ JSON para armazenamento inicial de dados
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 📁 Estrutura do Projeto
 
-```bash
-ng e2e
-```
+mastercode/
+├── public/ # Interface do usuário
+│ ├── index.html # Página inicial
+│ ├── style.css # Estilo global
+│ ├── script.js # Scripts gerais
+│ ├── canvas.js # Gráficos e visualizações
+│ ├── mapas.js # Integração com Leaflet
+│ └── assets/ # Ícones, logos, etc
+│
+├── server/ # Backend com Express
+│ ├── app.js
+│ ├── routes/
+│ └── controllers/
+│
+├── data/ # Base de dados (mock/json)
+│
+└── README.md # Documentação
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+yaml
+Copiar
+Editar
