@@ -1,4 +1,7 @@
 mat-toolbar {
+  position: relative;
+  right: 0%;
+  width: 100%;
   background: linear-gradient(90deg, #0a1d0a, #0cca6b);
   background-color: #0e3b0e;
   color: #00ff7f;
@@ -8,9 +11,12 @@ mat-toolbar {
 
 
 
-.span-logo {
+.span-logo, img {
+  width: 80px;
+  height: 80px;
   position: relative;
-  left: 45%;
+  right: 1%;
+  border-radius: 12px;
 
 }
 
@@ -51,6 +57,7 @@ form .btn:hover {
 .navbar a {
   position: relative;
   left: 50px;
+  top: 20px;
   color: #00ff7f;
 
 }

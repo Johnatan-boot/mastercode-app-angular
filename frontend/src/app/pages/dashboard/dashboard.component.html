@@ -1,52 +1,27 @@
 <div class="dashboard">
-
   <main>
     <section class="panel">
       <h2>Progresso dos Serviços</h2>
       <canvas id="progressChart"></canvas>
     </section>
-    <section class="panel">
-  <h2>
-    Alunos
-    <button (click)="toggleAlunos()" title="Ocultar/Mostrar">
-      <span [innerText]="showAlunos() ? '👁' : '🙈'"></span>
-    </button>
-  </h2>
-  <ul class="list-flat" *ngIf="showAlunos()">
-    <li *ngFor="let aluno of alunos.slice(0, 3)">{{ aluno }}</li>
-  </ul>
-  <canvas id="chartAlunos"></canvas>
-</section>
-
 
     <section class="panel">
-      <h2>Usuários</h2>
-      <canvas id="chartUsuarios"></canvas>
+      <h2>
+        Alunos
+        <button (click)="toggleAlunos()" title="Ocultar/Mostrar">
+          <span [innerText]="showAlunos() ? '👁' : '🙈'"></span>
+        </button>
+      </h2>
+      <ul class="list-flat" *ngIf="showAlunos()">
+        <li *ngFor="let aluno of alunos.slice(0, 3)">{{ aluno }}</li>
+      </ul>
     </section>
 
-    <section class="panel">
-      <h2>Serviços</h2>
-      <canvas id="chartServicos"></canvas>
-    </section>
-
-    <section class="panel">
-      <h2>Cursos</h2>
-      <canvas id="chartCursos"></canvas>
-    </section>
-
-    <section class="panel">
-      <h2>Estoque</h2>
-      <canvas id="chartEstoque"></canvas>
-    </section>
-
-    <section class="panel">
-      <h2>Atendimentos</h2>
-      <canvas id="chartAtendimento"></canvas>
-    </section>
-
-    <section class="panel">
-      <h2>Satisfação</h2>
-      <canvas id="chartSatisfacao"></canvas>
-    </section>
+    <section class="panel"><h2>Usuários</h2><canvas id="chartUsuarios"></canvas></section>
+    <section class="panel"><h2>Serviços</h2><canvas id="chartServicos"></canvas></section>
+    <section class="panel"><h2>Cursos</h2><canvas id="chartCursos"></canvas></section>
+    <section class="panel"><h2>Estoque</h2><canvas id="chartEstoque"></canvas></section>
+    <section class="panel"><h2>Atendimentos</h2><canvas id="chartAtendimento"></canvas></section>
+    <section class="panel"><h2>Satisfação</h2><canvas id="chartSatisfacao"></canvas></section>
   </main>
 </div>

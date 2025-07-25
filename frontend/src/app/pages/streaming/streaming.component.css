@@ -2,7 +2,19 @@
   display: block;
 }
 
+.banner{
+  position: relative;
+  right: 120px;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 96%;
+  height: 40vh;
+}
+
 .card{
+  width: 96%;
+  position: relative;
+  right: 100px;
   margin-top: 20px;
   background: linear-gradient(145deg, #061606, #0e3b0e);
   border-radius: 12px;
@@ -12,10 +24,14 @@
 }
 
 h3{
-  font-size: 1.2em;
+    color: #A23E91;
+    font-size: 1.2em;
+    font-weight: 700;
 }
 
 p{
   margin-bottom: 25px;
+    color: #A23E91;
+
 }
 

@@ -3,11 +3,12 @@ import { Router, NavigationEnd, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { filter } from 'rxjs';
 import { NavbarComponent } from "./components/navbarcomponent/navbarcomponent";
+import { SidebarComponent } from './components/sidebar';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, CommonModule,],
+  imports: [RouterOutlet, NavbarComponent, CommonModule, SidebarComponent,],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -17,6 +18,12 @@ export class App {
   showNavbar = computed(() =>
     !['/login', '/cadastro'].some(route => this.currentUrl().includes(route))
   );
+
+  showSidebar(): boolean {
+  const hiddenRoutes = ['/login', '/cadastro']; // ou as rotas que não devem mostrar o sidebar
+  return !hiddenRoutes.includes(this.router.url);
+}
+
 
   constructor(private router: Router) {
     effect(() => {

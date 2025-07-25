@@ -8,6 +8,8 @@ h2{
   font-weight: 600;
 }
 .content {
+  position: relative;
+  right: 250px;
   border-radius: 10px;
   position: relative;
   top: 20px;

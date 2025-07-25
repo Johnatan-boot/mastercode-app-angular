@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbarcomponent.css'
 })
 export class NavbarComponent {
+  logo = "../../../assets/logo.png";
   carrinho = inject(CarrinhoService);
   total = computed(() => this.carrinho.totalItens());
 }

@@ -17,7 +17,7 @@ export class StreamingComponent {
     },
     {
       title: 'Como funciona nossa metodologia',
-      videoUrl: 'https://www.youtube.com/embed/Bey4XXJAqS8',
+      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
       description: 'Explicamos como ensinamos na prática com foco em projetos reais.'
     }
   ];

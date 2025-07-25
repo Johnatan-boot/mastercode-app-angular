@@ -1,4 +1,8 @@
 .novidades-section {
+  border-radius: 20px;
+  width: 96%;
+  position: relative;
+  right: 100px;
   margin-top: 20px;
   padding: 3rem 1.5rem;
   background: #14dd78;
@@ -26,21 +30,17 @@
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-}
-
-.card-novidade:hover {
-  transform: translateY(-6px);
-}
-
-.imagem-novidade {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .conteudo-novidade {
   padding: 1rem;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .conteudo-novidade h3 {
@@ -52,16 +52,18 @@
 .conteudo-novidade p {
   font-size: 0.95rem;
   color: #00ff00;
+  flex-grow: 1;
 }
 
- .data-novidade {
-  position: relative;
-  left: 30%;
-  background: linear-gradient(135deg, #00C853, #64DD17); /* Verde vibrante */
+.data-novidade {
+  text-align: center;
+  width: 100%;
+  align-self: flex-start; /* Alinha à esquerda */
+  background: linear-gradient(135deg, #00C853, #64DD17);
   color: white;
   border: none;
   padding: 10px 20px;
-  margin-top: 12px;
+  margin-top: 1rem;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
@@ -69,6 +71,7 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 200, 83, 0.3);
 }
+
 .data-novidade:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 14px rgba(0, 200, 83, 0.5);

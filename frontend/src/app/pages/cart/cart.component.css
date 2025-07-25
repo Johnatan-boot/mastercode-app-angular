@@ -11,13 +11,20 @@
 }
 
 h2 {
+  position: relative;
+  right: 15%;
+  bottom: 80px;
+  text-align: center;
   font-size: 2rem;
   margin-bottom: 1.5rem;
   text-shadow: 0 0 6px #00ff00;
 }
 
 .cart-container {
-  width: 100%;
+  position: relative;
+  bottom: 90px;
+  right: 12%;
+  width: 99%;
   max-width: 1100px;
   background: rgba(0, 20, 0, 0.85);
   border: 2px solid #00ff00;
