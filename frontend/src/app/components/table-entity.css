@@ -5,6 +5,10 @@
   margin-bottom: 1rem;
 }
 
+h3{
+  color: #C64292;
+}
+
 .btn-add {
   background-color: #0e3b0e;
   color: #00ff7f;
@@ -42,6 +46,10 @@
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
 }
 
+
+.table th {
+  color: #C64292;
+}
 
 .form-user .form-group {
   display: flex;

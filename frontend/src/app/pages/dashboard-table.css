@@ -3,11 +3,21 @@
   min-height: 100vh;
 }
 
+h2{
+  color: #A23E91;
+  font-weight: 600;
+}
 .content {
   border-radius: 10px;
   position: relative;
   top: 20px;
   flex: 1;
   padding: 2rem;
-  background: #f5f5f5;
+  background-color: #14dd78;
 }
+
+.content {
+  margin-left: 220px; /* Deixa espaço para a sidebar */
+  padding: 2rem;
+}
+
